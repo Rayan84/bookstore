@@ -1,17 +1,17 @@
 import React from 'react';
 
 function Books() {
-  return(
+  return (
     <div>
       <h1>List of books:</h1>
-      <button>Delete</button>
+      <button type="button">Delete</button>
       <br />
       <br />
       <br />
       <p>Add New Book</p>
       <form action="#">
-        <label htmlFor="nameId">Book Name</label>
-        <input type="text" name="name" id="nameId" />
+        <label htmlFor="name">Book Name
+        <input type="text" name="name" id="name" /></label>
         <br />
         <input type="submit" />
       </form>
