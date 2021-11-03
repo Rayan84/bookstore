@@ -9,12 +9,12 @@ function Books() {
             <br />
             <br />
             <p>Add New Book</p>
-        <form action="#">
+          <form action="#">
             <label htmlFor="name">Book Name</label>
             <input type="text" name="name" id="name" />
             <br />
             <input type="submit" />
-        </form>
+          </form>
         </div>
     )
 }

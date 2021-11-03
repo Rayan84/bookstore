@@ -20,7 +20,7 @@ This application is a bookstore website, it demonstrate functionalities to add a
 			
 To get a local copy up and running follow these simple example steps.			
 			
-`git clone https://github.com/Rayan84/math-magician.git`			
+`git clone `			
 			
 ### Installation			
 			
