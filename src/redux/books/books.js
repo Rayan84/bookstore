@@ -10,8 +10,10 @@ function Books() {
       <br />
       <p>Add New Book</p>
       <form action="#">
-        <label htmlFor="name">Book Name
-        <input type="text" name="name" id="name" /></label>
+        <label htmlFor="name">
+          Book Name
+          <input type="text" name="name" id="name" />
+        </label>
         <br />
         <input type="submit" />
       </form>
