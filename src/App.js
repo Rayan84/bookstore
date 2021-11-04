@@ -1,11 +1,11 @@
 import './index.css';
+import Navbar from './components/navbar';
 import {
   BrowserRouter as Router,
   Switch,
   Route,
-  Link,
 } from 'react-router-dom';
-import Books from './redux/books/books';
+import Booklist from './components/booklist';
 import Categories from './redux/categories/categories';
 
 function App() {
@@ -13,18 +13,13 @@ function App() {
     <div className="App">
       <header className="App-header">
         <Router>
-          <nav>
-            <ul>
-              <li><Link to="/">Books</Link></li>
-              <li><Link to="/categories">Categories</Link></li>
-            </ul>
-            <hr />
-          </nav>
+          <Navbar />
           <Switch>
             <Route path="/categories"><Categories /></Route>
-            <Route path="/"><Books /></Route>
+            <Route path="/"><Booklist /></Route>
           </Switch>
         </Router>
+
       </header>
     </div>
   );
