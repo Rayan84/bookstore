@@ -11,7 +11,7 @@ function Booklist() {
         <li>
           {() => {
             array.forEach((bookName, author) => {
-              Book(bookName, author)
+              Book(bookName, author);
             });
           }}
         </li>

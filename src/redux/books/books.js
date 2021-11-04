@@ -7,7 +7,8 @@ function Books(title, author) {
       <h1>List of books:</h1>
       <p>
         {title}
-        {author}</p>
+        {author}
+      </p>
       <button type="button">Delete</button>
       <CreateNewBook />
       <br />
