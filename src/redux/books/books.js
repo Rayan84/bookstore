@@ -5,7 +5,9 @@ function Books(title, author) {
   return (
     <div>
       <h1>List of books:</h1>
-      <p>{title}{author}</p>
+      <p>
+        {title}
+        {author}</p>
       <button type="button">Delete</button>
       <CreateNewBook />
       <br />

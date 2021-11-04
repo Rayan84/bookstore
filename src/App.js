@@ -1,10 +1,11 @@
 import './index.css';
-import Navbar from './components/navbar';
 import {
   BrowserRouter as Router,
   Switch,
   Route,
 } from 'react-router-dom';
+import Navbar from './components/navbar';
+
 import Booklist from './components/booklist';
 import Categories from './redux/categories/categories';
 

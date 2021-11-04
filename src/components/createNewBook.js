@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 
 function CreateNewBook() {
   return (
@@ -13,7 +13,7 @@ function CreateNewBook() {
         <input type="submit" />
       </form>
     </div>
-  )
+  );
 }
 
 export default CreateNewBook;
