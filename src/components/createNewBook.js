@@ -1,4 +1,4 @@
-import { React, useState } from 'react';
+import { React, useEffect, useState } from 'react';
 import { useDispatch } from 'react-redux';
 import { v4 as uuidv4 } from 'uuid';
 import { addBook } from '../redux/books/books';
@@ -7,14 +7,21 @@ function CreateNewBook() {
   const dispatch = useDispatch();
   const [title, setTitle] = useState('');
   const [author, setAuthor] = useState('');
+  const [category, setCategory] = useState('');
   const handleTitleChange = (event) => setTitle(event.target.value);
   const handleAuthorChange = (event) => setAuthor(event.target.value);
+  const handleCategoryChange = (event) => setCategory(event.target.value);
+  useEffect(() => {
+    dispatch(fetchBooks());
+  }, [dispatch]);
+  
   const handleSubmit = (e) => {
     e.preventDefault();
     const details = {
       id: uuidv4(),
       title,
       author,
+      category,
     };
     dispatch(addBook(details));
   };
