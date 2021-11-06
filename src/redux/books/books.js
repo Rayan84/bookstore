@@ -24,8 +24,8 @@ const reducer = (state = initialState, action) => {
       return state.filter((book) => book.id !== action.payload);
     default:
       return state;
-      }
-  };
+  }
+};
 
 export const addBook = (payload) => ({
   type: ADD_BOOK,

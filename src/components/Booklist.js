@@ -1,6 +1,6 @@
 import React from 'react';
-import CreateNewBook from './createNewBook';
 import { useSelector, useDispatch } from 'react-redux';
+import CreateNewBook from './createNewBook';
 import { removeBook } from '../redux/books/books';
 
 const Booklist = () => {
@@ -15,10 +15,12 @@ const Booklist = () => {
       <ul>
         {items.map((item) => (
           <li key={item.id}>
-            <p>{item.id} </p>
+            <p>
+              {item.id}
+            </p>
             <p>{item.title}</p>
             <p>{item.author}</p>
-            <button onClick={() => deleteHandler(item.id)}>Delete</button>
+            <button type="button" onClick={() => deleteHandler(item.id)}>Delete</button>
           </li>
         ))}
       </ul>
