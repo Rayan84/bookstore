@@ -4,17 +4,17 @@ import {
   Switch,
   Route,
 } from 'react-router-dom';
+import { Provider } from 'react-redux';
 import Navbar from './components/navbar';
 import Booklist from './components/Booklist';
 import Categories from './redux/categories/categories';
-import { Provider } from 'react-redux';
 import Store from './redux/configureStore';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <Provider store={ Store }>
+        <Provider store={Store}>
           <Router>
             <Navbar />
             <Switch>
